@@ -20,6 +20,46 @@ Traditional adaptive integration techniques use fixed heuristics to determine ho
 
 ## 📂 Project Structure
 
+The project is organized as follows:
+
+- **`.gitignore`**: Specifies intentionally untracked files that Git should ignore.
+- **`LICENSE`**: Contains the license information for the project.
+- **`Presentation.pdf`**: A PDF presentation document, likely summarizing the project.
+- **`README.md`**: This file, providing an overview of the project.
+- **`REPORT.pdf`**: A PDF report document, likely detailing the project's findings.
+- **`results/`**: Contains the outputs and plots from the integration experiments.
+    - **`results/README.md`**: A detailed summary of the benchmark results and comparisons.
+    - **`results/1D/`**: Stores images and data related to 1D integration benchmarks.
+    - **`results/2D/`**: Stores images and data related to 2D integration benchmarks.
+
+**Note:** The Python source code for the RL agent, Gym environments, and integration methods described in this README is not currently present in this repository. A `requirements.txt` file, typically used to list Python dependencies, is also missing.
+---
+
+## 🛠️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/adaptive-integration.git # TODO: Update USERNAME and repository name
+cd adaptive-integration
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+This section would typically describe how to run the RL-based integration framework, including:
+- How to execute the main scripts for 1D or 2D integration.
+- Examples of command-line arguments for specifying functions, domains, and methods.
+- Instructions on how to use the framework as a library, if applicable.
+
+**Note:** As the Python source code for the RL agent, Gym environments, integration methods, and the `requirements.txt` file are not currently present in this repository, specific usage instructions cannot be provided at this time. Once the code is available, this section should be updated with detailed steps on how to run the experiments or use the integration tools.
 
 ---
 
@@ -41,7 +81,7 @@ Traditional adaptive integration techniques use fixed heuristics to determine ho
   - **Monte Carlo Sampling**
   - **Particle Finite Element Method (PFEM)**
  
-Currently the model is only implemented to do the Integration upto 2D Functions but it could be easily extended to N-Dimensional Integration.
+Currently the model is only implemented to do the Integration up to 2D Functions but it could be easily extended to N-Dimensional Integration.
 
 ---
 
@@ -58,21 +98,25 @@ The framework has been tested on a range of function classes:
 
 - Significantly lower integration error for a fixed budget of function evaluations compared to classical heuristics.
 - Adaptive refinement concentrates effort in regions with high local error or structural complexity.
-- The results could be seen in assets folder.
+- Detailed results, including plots and summaries, can be found in the `results/` directory. See `results/README.md` for a comprehensive overview.
 
 ---
 
-## 🛠️ Installation
+## 🤝 Contributing
 
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/adaptive-integration.git
-cd adaptive-integration
+Contributions are welcome! If you'd like to contribute to this project, please follow these general guidelines:
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+1.  **Fork the repository** to your own GitHub account.
+2.  **Create a new branch** for your feature or bug fix: `git checkout -b feature/your-feature-name` or `bugfix/issue-description`.
+3.  **Make your changes** and commit them with clear, descriptive messages.
+4.  **Ensure your code lints and tests pass** (if applicable). Given the current state of the repository, this might involve adding tests if you are contributing code.
+5.  **Push your branch** to your fork: `git push origin feature/your-feature-name`.
+6.  **Submit a pull request** to the main repository, detailing the changes you've made.
 
-# Install dependencies
-pip install -r requirements.txt
-```
+We appreciate your help in improving this project!
+
+---
+
+## 📜 License
+
+This project is licensed under the terms of the `LICENSE` file. Please see that file for more details.
