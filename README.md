@@ -31,15 +31,13 @@ The project is organized as follows:
     - **`results/README.md`**: A detailed summary of the benchmark results and comparisons.
     - **`results/1D/`**: Stores images and data related to 1D integration benchmarks.
     - **`results/2D/`**: Stores images and data related to 2D integration benchmarks.
-
-**Note:** The Python source code for the RL agent, Gym environments, and integration methods described in this README is not currently present in this repository. A `requirements.txt` file, typically used to list Python dependencies, is also missing.
 ---
 
 ## 🛠️ Installation
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/adaptive-integration.git # TODO: Update USERNAME and repository name
+git clone https://github.com/username/repository-name.git
 cd adaptive-integration
 
 # Create virtual environment
@@ -54,12 +52,11 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-This section would typically describe how to run the RL-based integration framework, including:
-- How to execute the main scripts for 1D or 2D integration.
-- Examples of command-line arguments for specifying functions, domains, and methods.
-- Instructions on how to use the framework as a library, if applicable.
-
-**Note:** As the Python source code for the RL agent, Gym environments, integration methods, and the `requirements.txt` file are not currently present in this repository, specific usage instructions cannot be provided at this time. Once the code is available, this section should be updated with detailed steps on how to run the experiments or use the integration tools.
+To run the project, navigate to the root directory of the cloned repository and execute the main script:
+   ```bash
+   python -m code.main
+   ```
+   This command will start the process, which typically involves training the reinforcement learning model using the 2D test functions defined in the project and then evaluating its performance. The training progress and evaluation results will be displayed in the console. Intermediate models and normalization statistics are saved in the `adaptive_integration_2d_models` directory, and the final model is saved as `adaptive_integration_2d_models/adaptive_integration_final.zip`.
 
 ---
 

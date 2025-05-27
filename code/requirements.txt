@@ -1,0 +1,16 @@
+# Core
+numpy
+matplotlib
+scipy
+
+# Reinforcement Learning
+stable-baselines3==1.8.0
+gym==0.26.2
+
+# Deep Learning
+torch>=1.11.0
+
+# Logging & Monitoring
+tensorboard
+tqdm
+
